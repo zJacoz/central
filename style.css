@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -36,10 +36,10 @@ body * {
 }
 
 #container {
-    width: 100%;
-    max-width: 588px;
-    margin: 56px auto 0px auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
 }
 
 /* profile */
@@ -121,7 +121,7 @@ ul li a {
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
+
   text-decoration: none;
   font-weight: 500;
 
@@ -174,11 +174,21 @@ footer {
   }
 }
 
+@media (max-height: 800px) {
+  #container {
+    margin: 5px auto 0px auto;
+  }
+  ul {
+    margin: 20px auto auto auto;
+  }
+}
+
 /* animation */
-@keyframes  slide-in {
+@keyframes slide-in {
   from {
     left: 0;
   }
+
   to {
     left: 50%;
   }
@@ -188,6 +198,7 @@ footer {
   from {
     left: 50%;
   }
+
   to {
     left: 0;
   }
